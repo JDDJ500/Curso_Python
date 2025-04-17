@@ -47,7 +47,7 @@ Label(frame_form, text="Tipo:").grid(row=2, column=0, padx=5, pady=5, sticky='e'
 Label(frame_form, text="Quantidade:").grid(row=3, column=0, padx=5, pady=5, sticky='e')
 Label(frame_form, text="Idade:").grid(row=4, column=0, padx=5, pady=5, sticky='e')
 
-# Rceber Dados
+# Receber Dados
 entry_treinador    = Entry(frame_form, width=40)
 entry_pokemon      = Entry(frame_form, width=40)
 entry_tipo         = Entry(frame_form, width=40)
@@ -62,6 +62,7 @@ def limpar():
     entry_tipo.delete(0, END)
     entry_quantidade.delete(0, END)
     entry_idade.delete(0, END)
+    opcao_selecionada.set("Selecione")
 
 def Carregar_pokemon():
     for item in tree.get_children():
